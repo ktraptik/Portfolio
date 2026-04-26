@@ -57,7 +57,7 @@ const CaseStudies = ({ caseStudies }) => {
                     <ul className="results-list">
                       {study.result.map((item, idx) => (
                         <li key={idx}>
-                          {/* <span className="result-icon" aria-hidden="true">&#10003;</span> */}
+                          
                           {item}
                         </li>
                       ))}
