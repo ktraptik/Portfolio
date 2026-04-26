@@ -89,7 +89,8 @@ This repo is prepared for GitHub in a few practical ways:
 3. In GitHub:
    - open `Settings > Pages`
    - set `Source` to `GitHub Actions`
-4. Push to `main` and the workflow will build and deploy automatically.
+4. Save the Pages settings.
+5. Push to `main` and the workflow will build and deploy automatically.
 
 The workflow file is:
 
@@ -103,3 +104,8 @@ Use these settings:
 
 - Build command: `npm run build`
 - Publish directory: `build`
+
+## Notes
+
+- If GitHub Pages deployment fails, verify `Settings > Pages > Source` is set to `GitHub Actions`.
+- If a local production build fails with a Windows `EPERM` error on `build/asset-manifest.json`, close any process serving the old build and run `npm run build` again.
